@@ -2,7 +2,7 @@ const { forkJoin, from } = require('rxjs')
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-describe.skip('forkJoin', () => {
+describe('forkJoin', () => {
   it('should ok', done => {
     const step01 = async () => { await sleep(10); console.log('--- step01'); return 1 }
     const step02 = async () => { await sleep(20); console.log('--- step02'); return 2 }

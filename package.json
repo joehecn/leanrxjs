@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/joehecn/leanrxjs#readme",
   "dependencies": {
+    "moment": "^2.29.1",
     "rxjs": "^7.0.0"
   },
   "devDependencies": {

@@ -455,7 +455,7 @@ const makeStepMap = ({ indexs = [0], arr = [
   return { stepMap, stateMap }
 }
 
-describe('run', () => {
+describe.skip('run', () => {
   it('should ok', async () => {
     for (let i = 0, len = 19; i < len; i++) {
       const { stepMap, stateMap } = makeStepMap({ indexs: [i] })
@@ -464,7 +464,7 @@ describe('run', () => {
     }
   })
 
-  it.only('should ok', async () => {
+  it('should ok', async () => {
     const i = 2
     const { stepMap, stateMap } = makeStepMap({ indexs: [i] })
     await run(stepMap)
